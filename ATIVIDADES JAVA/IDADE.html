@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>IDADE</title>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body leftmargin="80" topmargin="80">
+
+<h1>QUATOS ANOS VOCE TEM </h1>
+
+<p>PESSOA 1: <span id="N1" > </span> </p>
+<p>ANO DE NASCIMENTO: <span id="A1" > </span> </p>
+<p>PESSOA 2: <span id="N2" > </span> </p>
+<p>ANO DE NASCIMENTO: <span id="A2" > </span> </p>
+<p>RESULTADO1: <span id="R" > </span> </p>
+<p>RESULTADO2: <span id="R2" > </span> </p>
+
+<script>
+
+let NOME1 =(prompt("Digite SEU NOME"));
+let ANO1 =Number(prompt("Digite O ANO DE SEU NASCIMENTO"));
+let NOME2 =(prompt("Digite SEU NOME"));
+let ANO2 =Number(prompt("Digite O ANO DE SEU NASCIMENTO"));
+let SITUACAO1 ;
+let SITUACAO2;
+
+
+SITUACAO1=(2023-ANO1)
+
+SITUACAO2=(2023-ANO2)
+
+  
+
+document.getElementById("N1").innerHTML=NOME1
+document.getElementById("A1").innerHTML=ANO1
+document.getElementById("N2").innerHTML=NOME2
+document.getElementById("A2").innerHTML=ANO2
+document.getElementById("R").innerHTML="ESTÁ É SUA IDADE:" +NOME1 +","+SITUACAO1+"anos"
+document.getElementById("R2").innerHTML="ESTÁ É SUA IDADE:" +NOME2 +"," +SITUACAO2+"anos"
+
+
+
+</script>
+</body>
+</html>

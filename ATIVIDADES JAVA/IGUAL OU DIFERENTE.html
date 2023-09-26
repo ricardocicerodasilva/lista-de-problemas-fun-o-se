@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>DOIS VALORES</title>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body leftmargin="80" topmargin="80">
+
+<h1>DIFERENÇAS ENTRE VALORES</h1>
+
+<p>NUMERO 1: <span id="N1" > </span> </p>
+<p>NUMERO 2: <span id="N2" > </span> </p>
+<p>RESULTADO :<span id="R" > </span> </p>
+<script>
+
+let NUMERO1 =Number(prompt("DIGITE UM NÚMERO"));
+let NUMERO2 =Number(prompt("DIGITE OUTRO NÚMERO"));
+let SITUACAO;
+
+if (NUMERO1<NUMERO2)
+SITUACAO="DIFERENTE"
+else
+SITUACAO="IGUAL"
+
+document.getElementById("N1").innerHTML=NUMERO1
+document.getElementById("N2").innerHTML=NUMERO2
+document.getElementById("R").innerHTML=SITUACAO
+
+</script>
+</body>
+</html>

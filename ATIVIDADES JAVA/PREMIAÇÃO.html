@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>PREMIACAO</title>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body leftmargin="80" topmargin="80">
+
+<h1>PREMIAÇÃO</h1>
+
+<p>NOME: <span id="N1" > </span> </p>
+<p>VALOR VENDAS: <span id="VLV" > </span> </p>
+<p>RESULTADO :<span id="R" > </span> </p>
+<script>
+
+let NOME1 =(prompt("DIGITE SEU NOME"));
+let VENDAS =Number(prompt("DIGITE O TOTAL DE SUAS VENDAS"));
+let SITUACAO;
+
+if (VENDAS>=2000)
+SITUACAO="GANHOU"
+else
+SITUACAO="NÃO GANHOU"
+
+document.getElementById("N1").innerHTML=NOME1
+document.getElementById("VLV").innerHTML=VENDAS
+document.getElementById("R").innerHTML=SITUACAO
+
+</script>
+</body>
+</html>

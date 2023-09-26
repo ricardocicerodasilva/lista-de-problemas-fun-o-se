@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>VERIFICAR</title>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body leftmargin="80" topmargin="80">
+
+<h1>PAR OU IMPAR</h1>
+
+<p>NUMERO: <span id="N1" > </span> </p>
+<p>RESULTADO:<span id="R" > </span> </p>
+<script>
+
+let NUMERO =Number(prompt("DIGITE UM NÚMERO"));
+let soma=NUMERO%2;
+let SITUACAO;
+
+if(soma==0)
+SITUACAO="PAR";
+else
+SITUACAO="IMPAR";
+
+document.getElementById("N1").innerHTML=NUMERO
+document.getElementById("R").innerHTML=SITUACAO
+
+
+
+</script>
+</body>
+</html>

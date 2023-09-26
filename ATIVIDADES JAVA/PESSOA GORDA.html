@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>PESSOA GORDA</title>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body leftmargin="80" topmargin="80">
+
+<h1>PESSOAS OBESAS</h1>
+
+<p>PESSOA 1: <span id="N1" > </span> </p>
+<p>PESO: <span id="P1" > </span> </p>
+<p>PESSOA 2: <span id="N2" > </span> </p>
+<p>PESO: <span id="P2" > </span> </p>
+<p>VOCE É O MAS GORDO: <span id="PESSOA" > </span> </p>
+
+<script>
+
+let NOME1 =(prompt("Digite SEU NOME"));
+let PESO1 =Number(prompt("Digite SEU PESO"));
+let NOME2 =(prompt("Digite SEU NOME"));
+let PESO2 =Number(prompt("Digite SEU PESO"));
+let SITUACAO;
+
+if(PESO1>=PESO2){
+    SITUACAO=" PESSOA 1 ";
+
+}else
+    SITUACAO="PESSOA 2 "
+
+  
+
+document.getElementById("N1").innerHTML=NOME1
+document.getElementById("P1").innerHTML=PESO1
+document.getElementById("N2").innerHTML=NOME2
+document.getElementById("P2").innerHTML=PESO2
+document.getElementById("PESSOA").innerHTML=SITUACAO
+
+
+</script>
+</body>
+</html>

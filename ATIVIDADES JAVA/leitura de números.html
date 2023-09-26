@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>leitura de numeros</title>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body leftmargin="80" topmargin="80">
+
+<h1>leitura Numérica</h1>
+
+<p>Numero 1: <span id="Numero1" > </span> </p>
+<p>Numero 2: <span id="Num2" > </span> </p>
+<p>Maior: <span id="maior1" > </span> </p>
+
+<script>
+
+let NUMERO =Number(prompt("Digite um número"));
+let NUMERO2 =Number(prompt("Digite outro número"));
+let SITUACAO;
+
+if(NUMERO>=NUMERO2){
+    SITUACAO="NÚMERO 1 É O MAIOR NÚMERO DIGITADO ";
+
+}else{(NUMERO2<=NUMERO)
+    SITUACAO="NÚMERO 2 É O MAIOR NÚMERO DIGITADO "
+}
+  
+
+document.getElementById("Numero1").innerHTML=NUMERO
+document.getElementById("Num2").innerHTML=NUMERO2
+document.getElementById("maior1").innerHTML=SITUACAO
+
+</script>
+</body>
+</html>
